@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 800px;">
+        <div style="width: 50%; float: left;">
+            <h3>MOBILE 1</h3>
+            <div>PIN LEVE</div>
+            <div id="pinleve1"></div>
+            <p id="mobileStatus1"></p>
+            <button type="button" onclick="checkStatus1()">STATUS</button>
+            <br>
+            <p>Soạn tin nhắn</p>
+            <input type="text" id="input1">
+            <button onclick="mobile1_Sent_mobile2()">Gửi</button>
+            <br>
+            <p>Inbox</p>
+            <p style="border: 1px solid; width: 300px; height: 100px;" id="inbox1"></p>
+            
+            <p>Sent</p>
+            <p style="border: 1px solid; width: 300px; height: 100px;" id="sent1"></p>
+            <br>
+            <button type="button" onclick="turnOnOffMobile1()">TẮT NGUỒN - KHỞI ĐỘNG</button>
+            <br>
+            <br>
+            <button type="button" onclick="chargeMobile1()">SẠC PIN</button>
+        </div>
+        <div style="width: 50%; float: left">
+            <h3>MOBILE 2</h3>
+            <div>PIN LEVE</div>
+            <div id="pinleve2"></div>
+            <p id="mobileStatus2"></p>
+            <button type="button" onclick="checkStatus2()">STATUS</button>
+            <br>
+            <p>Soạn tin nhắn</p>
+            <input type="text" id="input2">
+            <button onclick="mobile2_Sent_mobile1()">Gửi</button>
+            <br>
+            <p>Inbox</p>
+            <p style="border: 1px solid; width: 300px; height: 100px;" id="inbox2"></p>
+            
+            <p>Sent</p>
+            <p style="border: 1px solid; width: 300px; height: 100px;" id="sent2"></p>
+            <br>
+            <button type="button" onclick="turnOnOffMobile2()">TẮT NGUỒN - KHỞI ĐỘNG</button>
+            <br>
+            <br>
+            <button type="button" onclick="chargeMobile2()">SẠC PIN</button>
+        </div>
+    </div>
+    
+</body>
+<script src="mobile.js"></script>
+<script src="mobileManager.js"></script>
+</html>
